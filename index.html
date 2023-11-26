@@ -1,0 +1,305 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="shopify.com">
+        <picture tabindex="1">
+          <source
+            class="logo"
+            media="(min-width: 480px)"
+            srcset="
+              https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg
+            "
+            alt="Shopify Icon"
+          />
+          <img
+            class="logo"
+            src="https://crushingit.tech/hackathon-assets/shopify-icon.svg"
+            alt="Shopify Icon"
+          />
+        </picture>
+      </a>
+      <form action="" class="form">
+        <img
+          src="https://crushingit.tech/hackathon-assets/icon-search.svg"
+          alt="Search Icon"
+          class="search-icon"
+        />
+        <input tabindex="2" type="text" placeholder="Search" alt="Search bar" />
+      </form>
+      <div class="frame-five">
+        <div class="notification-icon" tabindex="3" id="notificationToggle">
+          <img
+            src="https://crushingit.tech/hackathon-assets/icon-bell.svg"
+            alt="Bell Icon"
+          />
+        </div>
+        <div class="notification-box" tabindex="4" id="notificationBox">
+          <div class="notification-one">
+            <b>Alerts</b>
+            <div class="notification-control">
+              <img tabindex="5" src="https://crushingit.tech/hackathon-assets/icon-filter.svg" alt="Filter icon">
+              <img tabindex="6" src="https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg" alt="Check-empty circle icon">
+            </div>
+          </div>
+          <div class="notification-two">
+            <p>Alerts about your account and store will show here.</p>
+          </div>
+        </div>
+        <div>
+          <div tabindex="5" class="shop-name" id="shopName">
+            <p>Davii Collections</p>
+          </div>
+          <div class="my-store" id="myStore">
+            <div class="store-info">
+              <div>
+                <span class="profile-picture">DC</span>
+                <p>Davii Collections</p>
+              </div>
+              <img src="https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg" alt="Check-empty cicle Icon">
+            </div>
+            <a href="admin.shopify.com" class="all-stores">
+              <img src="https://crushingit.tech/hackathon-assets/icon-store.svg" alt="Home Icon">
+              <p>All stores</p>
+            </a>
+            <hr>
+            <div class="store-links">
+              <a href="admin.shopify.com">Help Center</a>
+              <a href="admin.shopify.com">Changelog</a>
+              <a href="admin.shopify.com">Community forums</a>
+              <a href="admin.shopify.com">Hire a Shopify partner</a>
+              <a href="admin.shopify.com">Keyboard shortcuts</a>
+            </div>
+            <hr>
+            <div class="store-control">
+              <a href="admin.shopify.com" class="owner-info">
+               <b>David Michael</b> <br>
+                davidmichael@gmail.com
+              </a>
+              <a href="admin.shopify.com">Manage account</a>
+              <a href="admin.shopify.com">Logout</a>
+            </div>
+          </div>
+        </div>
+        <span class="profile-picture" id="shopLogo" tabindex="6">DC</span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="frame-four" id="selectPlan">
+          <div class="extend-your-trial">
+            <p>Extend your trial by $1/month for 3 months on select plans.</p>
+            <button class="select-a-plan"id="selectPlan" tabindex="6">Select a plan</button>
+          </div>
+          <div class="close-icon-box">
+            <img
+            tabindex="7"
+            id="closeSelectPlan"
+            class="close-icon"
+            src="https://crushingit.tech/hackathon-assets/icon-cross.svg"
+            alt="Close Icon"
+            />
+          </div>
+        </div>
+        <div class="frame-three">
+          <div class="part-one">
+            <div class="setup-guide">
+              <div class="setup-guide-text">
+                <b>Setup guide</b>
+                <p>
+                  Use this personalized guide to get your store up and running.
+                </p>
+              </div>
+              <p class="progress-text">1/5 completed <span class="progress-bar"><span class="progress"></span></span></p>
+            </div>
+            <div class="toggle" tabindex="8">
+              <img
+              id="toggleStepsOn"
+              style="display: none;"
+              class="toggle-icon"
+              src="https://crushingit.tech/hackathon-assets/icon-arrow-up.svg"
+              alt="Arrow-down Icon"
+              />
+              <img
+              id="toggleStepsOff"
+              class="toggle-icon"
+              src="https://crushingit.tech/hackathon-assets/icon-arrow-down.svg"
+              alt="Arrow-up Icon"
+              />
+            </div>
+          </div>
+          <div class="setup-steps" id="setupSteps">
+            <div class="guide-box-closed" tabindex="9" id="customizeBoxClosed">
+              <img
+              tabindex="10"
+              class="guide-box-icon"
+              src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+              alt="Dashed-circle Icon"
+              />
+              <p>Customize your online store</p>
+            </div>
+            <div class="guide-box" tabindex="11" id="customizeBox">
+              <div class="guide-box-mini">
+                <div id="checkItem">
+                  <img
+                  tabindex="12"
+                  class="guide-box-icon"
+                  src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+                  alt="Dashed-circle Icon"
+                  />
+                </div>
+                <div>
+                  <b>Customize your online store</b>
+                  <p class="guide-description">Choose a theme and add your logo, colors and images that reflect your brand. <a href="">Learn more</a></p>
+                  <button class="guide-cta">Customize theme</button>
+                </div>
+              </div>
+              <img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="Customize your store illustration">
+            </div>
+            <div class="guide-box-closed" tabindex="13" id="productBoxClosed">
+              <img
+              tabindex="14"
+              class="guide-box-icon"
+              src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+              alt="Dashed-circle Icon"
+              />
+              <p>Add your first product</p>
+            </div>
+            <div class="guide-box" tabindex="15" id="productBox">
+              <div class="guide-box-mini">
+                <img
+                tabindex="16"
+                class="guide-box-icon"
+                src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+                alt="Dashed-circle Icon"
+                />
+                <div>
+                  <b>Add your first product</b>
+                  <p class="guide-description">Add a description, add photos, and set pricing for the products you plan to sell. <a href="">Learn more</a></p>
+                  <span class="product-cta">
+                    <button class="guide-cta">Add product</button>
+                    <button class="guide-cta import-product-cta">Import product</button>
+                  </span>
+                </div>
+              </div>
+              <img src="https://crushingit.tech/hackathon-assets/product.png" alt="Add your first product illustration">
+            </div>
+            <div class="guide-box-closed" tabindex="17" id="domainBoxClosed">
+              <img
+              tabindex="18"
+              class="guide-box-icon"
+              src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+              alt="Dashed-circle Icon"
+              />
+              <p>Add a custom domain</p>
+            </div>
+            <div class="guide-box" tabindex="19" id="domainBox">
+              <div class="guide-box-mini">
+                <img
+                tabindex="20"
+                class="guide-box-icon"
+                src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+                alt="Dashed-circle Icon"
+                />
+                <div>
+                  <b>Add a custom domain</b>
+                  <p class="guide-description">Your current domain is 2222219.myshopify.com but you can add a custom domain to help customers find your online store. <a href="">Learn more</a></p>
+                  <button class="guide-cta">Add domain</button>
+                </div>
+              </div>
+              <img src="https://crushingit.tech/hackathon-assets/website.png" alt="Customize domain Illustration">
+            </div>
+            <div class="guide-box-closed" tabindex="21" id="storeBoxClosed">
+              <img
+              tabindex="22"
+              class="guide-box-icon"
+              src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+              alt="Dashed-circle Icon"
+              />
+              <p>Name your store</p>
+            </div>
+            <div class="guide-box" tabindex="23" id="storeBox">
+              <div class="guide-box-mini">
+                <img
+                tabindex="24"
+                class="guide-box-icon"
+                src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+                alt="Dashed-circle Icon"
+                />
+                <div>
+                  <b>Name your store</b>
+                  <p class="guide-description">Your temporary store name is currently Davii collections. The store name appears in your admin and your online store. <a href="">Learn more</a></p>
+                  <button class="guide-cta">Name store</button>
+                </div>
+              </div>
+              <img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="Name your store Illustration">
+            </div>
+            <div class="guide-box-closed" tabindex="25" id="paymentBoxClosed">
+              <img
+              tabindex="26"
+              class="guide-box-icon"
+              src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+              alt="Dashed-circle Icon"
+              />
+              <p>Set up a payment provider</p>
+            </div>
+            <div class="guide-box" tabindex="27" id="paymentBox">
+              <div class="guide-box-mini">
+                <img
+                tabindex="28"
+                class="guide-box-icon"
+                src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
+                alt="Dashed-circle Icon"
+                />
+                <div>
+                  <b>Set up a payment provider</b>
+                  <p class="guide-description">Choose a payment provider to start accepting payments. You'll need to create an account with the payment provider and set it up with your Shopify store. <a href="">Learn more</a></p>
+                  <button class="guide-cta">Set Up payment</button>
+                </div>
+              </div>
+              <img src="https://crushingit.tech/hackathon-assets/payment.png" alt="Setup payment provider illustration">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+    <script>
+      toggleStepsOff.addEventListener('click', function(){
+    setupSteps.style.display = 'none';
+    toggleStepsOff.style.display = 'none';
+    toggleStepsOn.style.display = 'block';
+})
+toggleStepsOff.addEventListener('keydown', (event) => {
+    if(event.key == 'Enter') {
+        setupSteps.style.display = 'none';
+        toggleStepsOff.style.display = 'none';
+        toggleStepsOn.style.display = 'block';
+    }
+})
+toggleStepsOn.addEventListener('click', function(){
+    setupSteps.style.display = 'block';
+    toggleStepsOn.style.display = 'none';
+    toggleStepsOff.style.display = 'block';
+})
+toggleStepsOn.addEventListener('keydown', (event) => {
+    if(event.key === 'enter') {
+        setupSteps.style.display = 'block';
+        toggleStepsOn.style.display = 'none';
+        toggleStepsOff.style.display = 'block';
+    }
+})
+    </script>
+  </body>
+</html>
